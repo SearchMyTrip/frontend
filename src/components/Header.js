@@ -10,11 +10,13 @@ const Header = () => {
       <div className="center">
         <ul>
           <li className="header-items">
-            <Link style={{ textDecoration: "none" }} to="/">
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
               Home
             </Link>
           </li>
-          <li className="header-items">Trips</li>
+          <li className="header-items"> <Link style={{ textDecoration: "none", color: "black" }} to="/trips">
+          Trips
+        </Link></li>
           <li className="header-items">Guide</li>
           <li className="header-items">Contact</li>
         </ul>

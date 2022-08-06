@@ -1,4 +1,4 @@
 module.exports = {
-  backendUrl: "https://traverse-nepal.herokuapp.com",
+  backendUrl: "http://localhost:9000",
   pythonServer: "https://fastbackendtraverse.herokuapp.com",
 };
