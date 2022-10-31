@@ -9,8 +9,11 @@ module.exports = {
 
     let token = localStorage.getItem("token");
     if (!token) {
-      if (allowed_paths.includes(current_path)) return;
-      window.location.assign("/login");
+      if (current_path.includes(allowed_paths)) {
+        return true;
+      } else {
+        window.location.assign("/login");
+      }
     }
   },
   isAuthPage() {
